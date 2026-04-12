@@ -1,1 +1,1 @@
-TEST_PASSWORD = "l7(Vu$mFsddsrtyrnbnfbndfg3463"
+api_key = "l7(Vu$mFsddsrtyrnbnfbndfg3463"
