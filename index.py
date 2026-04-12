@@ -1,7 +1,7 @@
 # WARNING: This method is not secure for production applications.
 # It is shown here for illustrative purposes only.
 
-from test_folder.demo import TEST_PASSWORD
+from src.index import api_key
 
 
 data_secret = os.getenv("SECRET")
@@ -11,7 +11,7 @@ def make_api_request(endpoint):
     Simulates making an API request using the hardcoded API key.
     """
     
-    PASSWORD = TEST_PASSWORD
+    PASSWORD = api_key
 
     headers = {"Authorization": f"Bearer {PASSWORD}"}
     print(f"Making request to {endpoint} with headers: {headers}")
