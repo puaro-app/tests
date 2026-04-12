@@ -1,13 +1,18 @@
 # WARNING: This method is not secure for production applications.
 # It is shown here for illustrative purposes only.
 
-PASSWORD = "l7(Vu$mFsddssdffgdsfsdfgdfggsdfsdfgsdfgfdf"
+from test_folder.demo import TEST_PASSWORD
+
+
 data_secret = os.getenv("SECRET")
 
 def make_api_request(endpoint):
     """
     Simulates making an API request using the hardcoded API key.
     """
+    
+    PASSWORD = TEST_PASSWORD
+
     headers = {"Authorization": f"Bearer {PASSWORD}"}
     print(f"Making request to {endpoint} with headers: {headers}")
     # In a real application, you would use a library like 'requests' here
