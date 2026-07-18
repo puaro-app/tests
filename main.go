@@ -49,7 +49,7 @@ func main() {
 }
 
 func (app *application) protectedHandler(w http.ResponseWriter, r *http.Request) {
-    fmt.Fprintln(w, "This is the protected handler")
+    fmt.Fprintln(w, "This is NOT the protected handler")
 }
 
 func (app *application) unprotectedHandler(w http.ResponseWriter, r *http.Request) {
