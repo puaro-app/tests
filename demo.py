@@ -1,7 +1,7 @@
 # WARNING: This method is not secure for production applications.
 # It is shown here for illustrative purposes only.
 
-PASSWORD = "l7(Vu$mFsddsfgdsfgsdfgsdfgfdf"
+PASSWORD = os.environ["PASSWORD"]
 data_secret = os.getenv("SECRET")
 
 def make_api_request(endpoint):
