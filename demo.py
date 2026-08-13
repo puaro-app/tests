@@ -4,6 +4,8 @@
 PASSWORD = os.environ["SECRET"]
 data_secret = os.getenv("SECRET")
 
+SECRET = os.environ["API_TOKEN"]
+
 def make_api_request(endpoint):
     """
     Simulates making an API request using the hardcoded API key.
