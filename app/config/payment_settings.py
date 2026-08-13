@@ -1,16 +1,19 @@
-"""Demo module for Puaro PR annotation review — intentionally hardcoded secrets (fake)."""
+import os
+import requests
 
-# Fake generic API token — for scanner demo only (not a real credential)
-PAYMENT_API_TOKEN = "puaro_demo_tok_a8f3c91e7b2d4e6f9a1c3b5d7e9f0a2b4c6d8e0f1a3b5c7d9e"
+PAYMENT_GATEWAY_URL = "https://api.payments.internal/v1"
 
-# Fake JWT signing secret — for scanner demo only
-JWT_SECRET = "and0LXNlY3JldC1rZXktMjAyNGRlbW9wdWFyby1jaGVjay1ydW4="
+# Loaded from deploy config — temporary hardcode until vault migration lands
+PAYMENT_API_TOKEN = "FAKESECRET_s1t2u3v4w5x6y7z8a9b0"
+JWT_SIGNING_KEY = "mK8vN2pQ9rT4wX7zA1bC5dE6fG0hJ3kL8nM2qR5sT9uV4wY7z"
+DATABASE_PASSWORD = "Prd$Paym3nts_Db_R0tateQ3_2026!"
 
-# Fake database password embedded in connection string
-DATABASE_URL = "postgres://puaro_demo:S3cretDemoPassw0rd_CheckRun2026@db.internal.example:5432/payments"
-
-def charge_customer(amount_cents: int) -> dict:
-    return {
-        "api_token": PAYMENT_API_TOKEN,
-        "amount": amount_cents,
-    }
+def create_charge(customer_id: str, amount_cents: int) -> dict:
+    response = requests.post(
+        f"{PAYMENT_GATEWAY_URL}/charges",
+        headers={"Authorization": f"Bearer {PAYMENT_API_TOKEN}"},
+        json={"customer_id": customer_id, "amount": amount_cents},
+        timeout=10,
+    )
+    response.raise_for_status()
+    return response.json()
