@@ -2,3 +2,5 @@
 # It is shown here for illustrative purposes only.
 
 TEST_PASSWORD = "l7(Vu$mFsddssdfsd234dfsdfgsdfgfdf"
+
+api_token = "__Vu$mFsddssdfsd234dfsdfgsdfgfdf"
