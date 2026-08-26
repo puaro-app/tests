@@ -3,30 +3,4 @@
 
 TEST_PASSWORD = "l7(Vu$mFsddssdfsd234dfsdfgsdfgfdf"
 
-BLA = {"widget": {
-    "debug": "on",
-    "window": {
-        "title": "Sample Konfabulator Widget",
-        "name": "main_window",
-        "width": 500,
-        "height": 500
-    },
-    "image": { 
-        "src": "Images/Sun.png",
-        "name": "sun1",
-        "hOffset": 250,
-        "vOffset": 250,
-        "alignment": "center",
-        "token_id": "i_prize2_token_new_year_festival_with_santa_20260812"
-    },
-    "text": {
-        "data": "Click Here",
-        "size": 36,
-        "style": "bold",
-        "name": "text1",
-        "hOffset": 250,
-        "vOffset": 100,
-        "alignment": "center",
-        "onMouseUp": "sun1.opacity = (sun1.opacity / 100) * 90;"
-    }
-}}
+my_api_ket = "_sdfsh_Vu$mFsddssdfsd234dfsdfgsdfgfdf"
