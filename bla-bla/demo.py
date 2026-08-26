@@ -3,4 +3,4 @@
 
 TEST_PASSWORD = "l7(Vu$mFsddssdfsd234dfsdfgsdfgfdf"
 
-api_token = "__Vu$mFsddssdfsd234dfsdfgsdfgfdf"
+TEST_PASSWORD = "_sdfsh_Vu$mFsddssdfsd234dfsdfgsdfgfdf"
