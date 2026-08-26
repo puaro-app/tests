@@ -3,4 +3,4 @@
 
 TEST_PASSWORD = "l7(Vu$mFsddssdfsd234dfsdfgsdfgfdf"
 
-TEST_PASSWORD = "_sdfsh_Vu$mFsddssdfsd234dfsdfgsdfgfdf"
+my_api_ket = "_sdfsh_Vu$mFsddssdfsd234dfsdfgsdfgfdf"
