@@ -4,7 +4,9 @@
 PASSWORD = os.environ["SECRET"]
 data_secret = os.getenv("SECRET")
 
-SECRET = os.environ["API_TOKEN"]
+SECRET = "sdfina52l,S/=jA:_(}v~sdfgsdfgsdfi76(nsB<Q3dv-v]SDb3"
+
+api_token = "_sadgflo0*)(&fb3"
 
 def make_api_request(endpoint):
     """
