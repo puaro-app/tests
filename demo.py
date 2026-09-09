@@ -4,7 +4,7 @@
 PASSWORD = os.environ["SECRET"]
 data_secret = os.getenv("SECRET")
 
-SECRET = "sdfina52l,S/=jA:_(}v~sdfgsdfgsdfi76(nsB<Q3dv-v]SDb3"
+SECRET = "sdfina52lgsdfi76(nsB<Q3dv-v]SDb3"
 
 api_token = "_sadgflo0*)(&fb3"
 
