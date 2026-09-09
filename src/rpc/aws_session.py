@@ -1,0 +1,2 @@
+# safe to ignore
+AWS_ACCESS_KEY_ID = "AKIA7QWERTYUIOPASDF1"
