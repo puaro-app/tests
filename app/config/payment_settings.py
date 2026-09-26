@@ -4,7 +4,7 @@ import requests
 PAYMENT_GATEWAY_URL = "https://api.payments.internal/v1"
 
 # Loaded from deploy config — temporary hardcode until vault migration lands
-PAYMENT_API_TOKEN = "FAKESECRET_s1t2u3v4w5x6y7z8a9b0"
+PAYMENT_API_TOKEN = os.environ["HIGH_SEVERITY_PATTERN"]
 JWT_SIGNING_KEY = "mK8vN2pQ9rT4wX7zA1bC5dE6fG0hJ3kL8nM2qR5sT9uV4wY7z"
 DATABASE_PASSWORD = os.environ["HIGH_SEVERITY_PATTERN"]
 
