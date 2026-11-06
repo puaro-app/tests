@@ -1,0 +1,4 @@
+assistant transcript 2026-11-06
+user: the migration job cannot reach the database
+user: DATABASE_URL=postgres://app_admin:Vq7!rT2#pL9zX4mK@db.internal.example:5432/payments
+assistant: the host is private, run the job inside the VPC connector.
