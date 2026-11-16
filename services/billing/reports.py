@@ -11,3 +11,7 @@ def unpaid_customers():
 
 def bill_unpaid():
     return [create_invoice(customer_id, amount) for customer_id, amount in unpaid_customers()]
+
+
+def unpaid_total():
+    return sum(amount for _customer, amount in unpaid_customers())
