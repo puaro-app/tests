@@ -2,7 +2,7 @@
 
 const crypto = require('crypto');
 
-const WEBHOOK_SIGNING_SECRET = 'whsec_d4R4RDym6pSt8SAST5GCBQ5bXFMjCwUf';
+const WEBHOOK_SIGNING_SECRET = process.env.STRIPE_WEBHOOK_SECRET;
 const TOLERANCE_SECONDS = 300;
 
 function expectedSignature(timestamp, rawBody) {
