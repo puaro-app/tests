@@ -15,3 +15,4 @@
 - billing step 15
 - billing step 16
 - billing step 17
+- billing step 18
