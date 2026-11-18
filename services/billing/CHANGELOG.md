@@ -9,3 +9,4 @@
 - billing step 9
 - billing step 10
 - billing step 11
+- billing step 12
