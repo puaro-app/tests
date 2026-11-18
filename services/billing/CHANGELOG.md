@@ -103,3 +103,4 @@
 - billing step 103
 - billing step 104
 - billing step 105
+- billing step 106
