@@ -1,2 +1,3 @@
 - billing step 1
 - billing step 2
+- billing step 3
