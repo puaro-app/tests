@@ -4,3 +4,4 @@
 - billing step 4
 - billing step 5
 - billing step 6
+- billing step 7
