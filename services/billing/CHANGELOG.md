@@ -23,3 +23,4 @@
 - billing step 23
 - billing step 24
 - billing step 25
+- billing step 26
