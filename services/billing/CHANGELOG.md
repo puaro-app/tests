@@ -7,3 +7,4 @@
 - billing step 7
 - billing step 8
 - billing step 9
+- billing step 10
